@@ -14,6 +14,22 @@ public class HomeWork3 {
         int lengthFirstName = firstName.length();
         System.out.println("Length of my first name is: " + lengthFirstName + ".");
 
+        //second way by string array
+
+        String fName = "John Doe";
+        String[] name2 = fName.split(" ");
+        int fNameLength = name2[0].length();
+        System.out.println("Length of name John is: " + fNameLength);
+        boolean laNaStaK = name2[1].toUpperCase().startsWith("K");
+        System.out.println("Does your last name starts with 'K'? " + laNaStaK);
+        char firstNameAlph = name2[0].charAt(fNameLength -1);
+        System.out.println("Last alphabet of the first name2 is: '" + firstNameAlph + "'.");
+        boolean endsMLasN = name2[1].toUpperCase().endsWith("M");
+        System.out.println("Does the last name end with 'M'? " + endsMLasN);
+
+
+
+
         // 2. Does your last name starts with "K" (Ignoring cases)
 
         String lastName = fullName.substring(indexOfSpace+1);
@@ -107,9 +123,83 @@ public class HomeWork3 {
         System.out.println(firstOne + secondOne + thirdOne);
 
 
+        //from 09/28 class
+
+        /**if name length is greater than 10 and number is greater than 5
+                * print the below:
+         *      name in all uppercase
+         *      and replace p with b in name
+                * else
+         * make result as false
+                *
+         *
+         * sout(result) // outside the if-else block*/
+
+        String name = "Happy";
+        boolean result1 = true;
+        int number = 22;
+
+        if (name.length()>10 && number>5) {
+            System.out.println(name.toUpperCase());
+            System.out.println(name.replace("p", "b"));
+        } else {
+        result1 = false;
+         }
+        System.out.println(result1);
+
+        //based on month name, print season
+        //         * dec, jab, feb -> winter
+        //         * mar, apr, may -> summer
+        //         * jun, jul, aug -> fall
+        //         * sep, oct, nov -> spring
+        //         * if invalid monthName, print invalid month entered
+        //         */
+        //        String monthName = "";
+
+        String monthName = "tchjv";
+        switch(monthName) {
+            case "December":
+                System.out.println("Winter");
+                break;
+            case "January":
+                System.out.println("Winter");
+                break;
+            case "February":
+                System.out.println("Winter");
+                break;
+            case "March":
+                System.out.println("Summer");
+                break;
+            case "April":
+                System.out.println("Summer");
+                break;
+            case "May":
+                System.out.println("Summer");
+                break;
+            case "June":
+                System.out.println("Fall");
+                break;
+            case "July":
+                System.out.println("Fall");
+                break;
+            case "August":
+                System.out.println("Fall");
+                break;
+            case "September":
+                System.out.println("Spring");
+                break;
+            case "October":
+                System.out.println("Spring");
+                break;
+            case "November":
+                System.out.println("Spring");
+                break;
+            default:
+                System.out.println("Invalid month");
 
 
 
+        }
 
     }
 }
