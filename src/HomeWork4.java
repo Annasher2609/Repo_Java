@@ -103,5 +103,54 @@ public class HomeWork4 {
 
 
 
+
+        String[] otherNames = {"Happy", "Peace", "Joy", "Laugh"};
+
+        for (int i=0 ; i<= otherNames.length-1 ; i++) {
+            if (i%2 == 0) {
+        System.out.println(otherNames[i]);
+            }
+        }
+        //or
+
+        for (int i=0 ; i<otherNames.length ; i+=2) {
+            System.out.println(otherNames[i]);
+
+        }
+
+        int abc = 10;
+        for ( int i =10; i >=1; i--) {
+            System.out.println(i);
+        }
+
+        char[] alphabets = {'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+        // print all values from array using for-loop, enhanced-for loop and while-loop
+
+        for (int i=0; i< alphabets.length; i++) {
+            System.out.println(alphabets[i]);
+        }
+
+        for (char letters : alphabets) {
+            System.out.println(letters);
+        }
+
+        int j=0;
+        while (j<alphabets.length) {
+            System.out.println(alphabets[j]);
+            j++;
+        }
+
+        String exp = "happy";
+        for (int i= 1; i<= exp.length(); i++) {
+            System.out.print(exp.charAt(exp.length()-i));
+        }
+
+        String[] uy = exp.split("");
+        for (int i=exp.length()-1; i>= 0; i--) {
+            System.out.print(uy[i]);
+        }
+
+
+
     }
 }
