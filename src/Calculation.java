@@ -26,6 +26,19 @@ public class Calculation {
         //String found = a1.duplicateValues(given);
         //System.out.println(found); // helo, happy, hello
 
+        HomeWork8 b1 = new HomeWork8();
+        b1.addToner(20);
+        b1.printSummary();
+        b1.addPages(40);
+        b1.printSummary();
+        b1.printDouble(20);
+        b1.printSummary();
+        b1.printSingle(7);
+        b1.printSummary();
+        b1.checkToner();
+        b1.addToner(11);
+        b1.checkToner();
+
 
 
     }

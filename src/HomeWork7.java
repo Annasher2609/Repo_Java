@@ -90,7 +90,7 @@ public class HomeWork7 {
      * I wanted to check if other duplicate already exists in the
      * string with final values. But, for some reasons, im still left
      * with duplicates in the final string.
-     
+
    **/
     public void duplicateValues(String[] arr) {
         String duplicates = "";
