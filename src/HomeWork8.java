@@ -15,7 +15,10 @@ public class HomeWork8 {
     int maxToner = 100;
     int maxPages = 100;
     public void addToner(int num) {
-        if (num <= (maxToner - tonerLevel)) {
+        if (num < 1) {
+            System.out.println("Invalid number");
+        }
+        else if (num <= (maxToner - tonerLevel)) {
             tonerLevel = tonerLevel + num;
         } else {
             System.out.println("Amount of toner exceeds your printer's capacity");
@@ -23,7 +26,9 @@ public class HomeWork8 {
     }
     //II.
     public void addPages ( int num){
-        if (num <= (maxPages - numPages)) {
+        if (num < 1) {
+            System.out.println("Invalid number");
+        } else if (num <= (maxPages - numPages)) {
             numPages = numPages + num;
         } else {
             System.out.println("Amount of paper exceeds your printer's capacity");
@@ -32,7 +37,10 @@ public class HomeWork8 {
 
     //III.a.
     public void printSingle (int num) {
-        if ((tonerLevel - num) >= 0 && (numPages - num) >= 0) {
+        if ( num < 1) {
+            System.out.println("Invalid number");
+        }
+        else if ((tonerLevel - num) >= 0 && (numPages - num) >= 0) {
             tonerLevel = tonerLevel - num;
             numPages = numPages - num;
         } else if ((tonerLevel - num) < 0 && (numPages - (num) >= 0)) {
@@ -50,7 +58,7 @@ public class HomeWork8 {
         } else if (num == 1) {
             tonerLevel = tonerLevel - num;
             numPages = numPages - num;
-        } else if (num > 1 && num % 2 != 0) {
+        } else if (num % 2 != 0) {
             if ((tonerLevel - num) >= 0 && (numPages - ((num + 1) / 2) >= 0)) {
                 tonerLevel = tonerLevel - num;
                 numPages = numPages - ((num + 1) / 2);
@@ -58,7 +66,7 @@ public class HomeWork8 {
                 System.out.println("There would be not enough toner to complete printing");
             } else if ((tonerLevel - num) >= 0 && (numPages - ((num + 1) / 2) < 0)) {
                 System.out.println("There would be not enough paper to complete printing");
-            } else if ((tonerLevel - num) < 0 && (numPages - ((num + 1) / 2) < 0)) {
+            } else {
                 System.out.println("There would be not enough toner and paper to complete printing");
             }
         } else if (num > 1 && num % 2 == 0) {
@@ -69,7 +77,7 @@ public class HomeWork8 {
                 System.out.println("There would be not enough toner to complete printing");
             } else if ((tonerLevel - num) >= 0 && (numPages - (num / 2) < 0)) {
                 System.out.println("There would be not enough paper to complete printing");
-            } else if ((tonerLevel - num) < 0 && (numPages - (num / 2) < 0)) {
+            } else {
                 System.out.println("There would be not enough toner and paper to complete printing");
             }
         }
