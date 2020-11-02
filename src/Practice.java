@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Practice {
     //"hello", "peace", "happy" , "hello", "Happy", "hello"
 
@@ -223,6 +227,45 @@ public class Practice {
             }
         }return count;
     }
+
+    /**int max =0;
+    for (int i=o; i< numbers.length; i++) {
+        if ( numbers[i] > max) {
+            max = numbers[i];
+        }
+    }
+    returns max;
+     **/
+
+//from 10/31 lab
+    public static void main(String[] args) {
+
+       /** ArrayList <String> arrayList = new ArrayList<>();
+        arrayList.add("happy");
+       // arrayList.add
+
+        for (int i = 2; i<arrayList.size(); i+=2) {
+            System.out.println(arrayList.get[i]);
+
+        }
+**/
+        ArrayList<Integer> arr1 = new ArrayList<>();
+        System.out.println("How many values would you like to add in the arrayList?");
+        Scanner scan = new Scanner(System.in);
+        int arr1Length = scan.nextInt();
+        for (int i =0; i<=arr1Length; i++) {
+            System.out.println("Please, enter the value");
+            int value = scan.nextInt();
+            arr1.add(value);
+        //no need to creat second oblect
+        }
+        System.out.println(arr1);
+
+    }
+
+
+
+
 
 }
 
