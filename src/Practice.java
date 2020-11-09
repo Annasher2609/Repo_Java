@@ -249,7 +249,7 @@ public class Practice {
 
         }
 **/
-        ArrayList<Integer> arr1 = new ArrayList<>();
+        /**ArrayList<Integer> arr1 = new ArrayList<>();
         System.out.println("How many values would you like to add in the arrayList?");
         Scanner scan = new Scanner(System.in);
         int arr1Length = scan.nextInt();
@@ -260,6 +260,19 @@ public class Practice {
         //no need to creat second oblect
         }
         System.out.println(arr1);
+**/
+        FirstTest m1 = new FirstTest();
+        int[] anotherSetOfNumbers = {32, 14, 24, 98, 24, 56, 148, 24, 78, 24};
+        int remove = 24;
+        //int[] arr = m1.removingInt(remove, anotherSetOfNumbers);
+        //System.out.println(Arrays.toString(arr));
+
+       int[] numbers = {0, 5, -1, 1, 2, 5, 3, 7, 1, 2};
+        int missing = m1.missingSmallest(numbers);
+        System.out.println(missing);
+        int[] arr = m1.removingInt(remove, anotherSetOfNumbers);
+        System.out.println(Arrays.toString(arr));
+
 
     }
 
